@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Business Card - Al-Ahram Group</title>
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -49,7 +48,7 @@
             box-shadow: 0 12px 30px rgba(138, 97, 28, 0.12);
         }
 
-        /* Company Logo Header at Top */
+        /* Company Logo Header */
         .company-header {
             text-align: center;
             margin-bottom: 20px;
@@ -190,39 +189,30 @@
 
     <div class="vcard-container">
         
-        <!-- Company Logo Header -->
         <div class="company-header">
-            <!-- Replace with direct link to your logo image -->
             <img src="https://ahramplastic.com/wp-content/uploads/2023/02/logo-7.png" alt="Al-Ahram Group Logo" class="company-logo">
         </div>
 
-        <!-- Profile Section -->
         <div class="profile">
-            <!-- PHOTO AS AN EXTERNAL WEB LINK -->
             <img src="https://media.licdn.com/dms/image/v2/D4D03AQEBSEqm-eGK-g/profile-displayphoto-crop_800_800/B4DZ33ZXcYGwAI-/0/1777972125232?e=1789603200&v=beta&t=4aLzRD7m-M34jzpJpRXnYSGHP4-nRhTN6PonRSYMPss" alt="Mina Maged" class="avatar">
             <h1 class="name">Mina Maged</h1>
             <p class="title">Sales Executive | Packaging Solutions</p>
         </div>
 
-        <!-- Primary Actions -->
         <div class="btn-group">
-            <!-- Company Website Link -->
             <a href="https://ahramplastic.com/" target="_blank" class="btn btn-secondary">
                 <i class="fa-solid fa-globe"></i> Visit Official Website
             </a>
 
-            <!-- CATALOG AS AN EXTERNAL WEB LINK (Google Drive, Dropbox, Website URL) -->
-            <a href="https://ahramplastic.com/wp-content/uploads/2025/12/%D9%83%D8%AA%D8%A7%D9%84%D9%88%D8%AC-%D8%B4%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D8%A3%D9%87%D8%B1%D8%A7%D9%85-%D9%84%D8%AA%D8%B5%D9%86%D9%8A%D8%B9-%D8%A7%D9%84%D8%A8%D9%84%D8%A7%D8%B3%D8%AA%D9%8A%D9%83-%D8%B4.%D9%85.%D9%85.pdf" target="_blank" class="btn btn-secondary">
+            <a href="https://ahramplastic.com/wp-content/uploads/2025/12/%D9%83%D8%AA%D8%A7%D9%84%D9%88%D8%AC-%D8%B4%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D8%A3%D9%87%D8%B1%D8%A7%D9%85-%D9%84%D8%AA%D8%B5%D9%8A%D9%86%D8%B9-%D8%A7%D9%84%D8%A8%D9%84%D8%A7%D8%B3%D8%AA%D9%8A%D9%83-%D8%B4.%D9%85.%D9%85.pdf" target="_blank" class="btn btn-secondary">
                 <i class="fa-solid fa-file-pdf"></i> View Product Catalog
             </a>
 
-            <!-- Save Contact Button -->
             <button class="btn btn-primary" onclick="downloadVCard()">
                 <i class="fa-solid fa-user-plus"></i> Save Contact
             </button>
         </div>
 
-        <!-- Direct Contact Grid -->
         <div class="action-grid">
             <a href="https://wa.me/201200379127?text=Hi,%20I'd%20like%20to%20inquire%20about%20Al-Ahram%20packaging%20products." class="action-card" target="_blank">
                 <i class="fa-brands fa-whatsapp action-icon"></i>
@@ -257,17 +247,16 @@
             </a>
         </div>
 
-        <!-- Footer -->
         <div class="footer-note">
             Al-Ahram Group — Industrial Packaging Solutions
         </div>
     </div>
 
-    <!-- VCF Download Script -->
     <script>
         function downloadVCard() {
             const vcardData = `BEGIN:VCARD
 VERSION:3.0
+N:Maged;Mina;;;
 FN:Mina Maged
 TITLE:Sales Executive
 ORG:Al-Ahram Group

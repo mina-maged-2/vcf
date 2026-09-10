@@ -313,11 +313,9 @@
 
         .action-card {
             display: flex;
-            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            gap: 8px;
-            padding: 14px 12px;
+            gap: 10px;
+            padding: 12px;
             background: linear-gradient(135deg, var(--gold-lighter) 0%, var(--gold-light) 100%);
             border: 1px solid var(--border-color);
             border-radius: var(--radius);
@@ -339,508 +337,9 @@
             background: linear-gradient(135deg, rgba(194, 146, 53, 0.15) 0%, transparent 100%);
             opacity: 0;
             transition: opacity 0.3s ease;
-        }
-
-        .action-card:hover::before {
-            opacity: 1;
-        }
-
-        .action-card:hover {
-            border-color: var(--gold-primary);
-            box-shadow: var(--shadow-md);
-            transform: translateY(-4px);
-        }
-
-        .action-icon {
-            font-size: 1.3rem;
-            color: var(--gold-dark);
-            transition: var(--transition-smooth);
-            z-index: 1;
-        }
-
-        .action-card:hover .action-icon {
-            transform: scale(1.2) rotate(5deg);
-            color: var(--gold-primary);
-        }
-
-        .action-text {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            z-index: 1;
-        }
-
-        .action-label {
-            font-size: 0.7rem;
-            color: var(--text-secondary);
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 0.3px;
-        }
-
-        .action-val {
-            font-size: 0.85rem;
-            font-weight: 700;
-            color: var(--gold-dark);
-        }
-
-        /* Divider Section */
-        .divider-section {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin: 18px 0;
-            opacity: 0.6;
-        }
-
-        .divider {
-            flex: 1;
-            height: 1px;
-            background: var(--border-color);
-        }
-
-        .divider-icon {
-            font-size: 0.85rem;
-            color: var(--gold-primary);
-        }
-
-        /* Footer */
-        .footer-note {
-            text-align: center;
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-            border-top: 1px solid var(--border-color);
-            padding-top: 16px;
-            animation: fadeIn 0.6s ease-out 0.4s both;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        .footer-emphasis {
-            color: var(--gold-primary);
-            font-weight: 700;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 480px) {
-            .vcard-container {
-                padding: 20px 16px;
-                max-width: 100%;
-                border-radius: 16px;
-            }
-
-            .name {
-                font-size: 1.3rem;
-            }
-
-            .avatar {
-                width: 85px;
-                height: 85px;
-            }
-
-            .action-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 10px;
-            }
-        }
-
-        /* Print Styles */
-        @media print {
-            body {
-                background: white;
-                padding: 0;
-            }
-
-            .vcard-container {
-                box-shadow: none;
-                border: none;
-                max-width: 100%;
-            }
-
-            .btn-group .btn {
-                display: none;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <div class="vcard-container">
-        
-        <div class="company-header">
-            <img src="https://ahramplastic.com/wp-content/uploads/2023/02/logo-7.png" alt="Al-Ahram Group Logo" class="company-logo">
-            <div class="company-tagline">Industrial Packaging Solutions</div>
-        </div>
-
-        <div class="profile">
-            <img src="https://media.licdn.com/dms/image/v2/D4D03AQEBSEqm-eGK-g/profile-displayphoto-crop_800_800/B4DZ33ZXcYGwAI-/0/1777972125232?e=1789603200&v=beta&t=4aLzRD7m-M34jzpJpRXnYSGHP4-nRhTN6PonRSYMPss" alt="Mina Maged" class="avatar">
-            <h1 class="name">Mina Maged</h1>
-            <p class="title">Sales Executive</p>
-            <p class="subtitle">Packaging Solutions Specialist</p>
-            <div class="certifications">
-                <span class="cert-badge"><i class="fa-solid fa-check"></i> ISO 9001</span>
-                <span class="cert-badge"><i class="fa-solid fa-check"></i> ISO 45001</span>
-            </div>
-        </div>
-
-        <div class="btn-group">
-            <a href="https://ahramplastic.com/" target="_blank" class="btn btn-secondary">
-                <span>
-                    <i class="fa-solid fa-globe"></i> Visit Official Website
-                </span>
-            </a>
-
-            <a href="https://ahramplastic.com/wp-content/uploads/2025/12/%D9%83%D8%AA%D8%A7%D9%84%D9%88%D8%AC-%D8%B4%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D8%A3%D9%87%D8%B1%D8%A7%D9%85-%D9%84%D8%AA%D8%B5%D9%8A%D9%86%D8%B9-%D8%A7%D9%84%D8%A8%D9%84
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Business Card - Mina Maged | Al-Ahram Group</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            --bg-color: #f9f7f4;
-            --card-bg: #ffffff;
-            --border-color: #e8dcc8;
-            --text-primary: #2a241e;
-            --text-secondary: #6e6557;
-            --gold-primary: #c29235;
-            --gold-dark: #8a611c;
-            --gold-light: #f4ece1;
-            --gold-lighter: #faf6f1;
-            --accent-bronze: #a67c52;
-            --radius: 14px;
-            --shadow-sm: 0 2px 8px rgba(138, 97, 28, 0.08);
-            --shadow-md: 0 8px 20px rgba(138, 97, 28, 0.12);
-            --shadow-lg: 0 12px 32px rgba(138, 97, 28, 0.15);
-            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-        }
-
-        html, body {
-            width: 100%;
-            height: 100%;
-        }
-
-        body {
-            background: linear-gradient(135deg, var(--bg-color) 0%, #f5f0e8 100%);
-            color: var(--text-primary);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px 16px;
-            background-attachment: fixed;
-        }
-
-        .vcard-container {
-            width: 100%;
-            max-width: 420px;
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 20px;
-            padding: 28px 24px;
-            box-shadow: var(--shadow-lg);
-            animation: slideInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
-        }
-
-        /* Animated top accent bar */
-        .vcard-container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 5px;
-            background: linear-gradient(90deg, var(--gold-primary), var(--gold-dark), var(--gold-primary));
-            animation: shimmer 3s ease-in-out infinite;
-        }
-
-        @keyframes slideInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes shimmer {
-            0%, 100% {
-                opacity: 0.7;
-            }
-            50% {
-                opacity: 1;
-            }
-        }
-
-        /* Company Logo Header */
-        .company-header {
-            text-align: center;
-            margin-bottom: 22px;
-            padding-bottom: 18px;
-            border-bottom: 2px solid var(--border-color);
-            position: relative;
-        }
-
-        .company-logo {
-            max-width: 180px;
-            height: auto;
-            margin: 0 auto 8px;
-            display: block;
-            transition: var(--transition-smooth);
-            filter: drop-shadow(0 2px 8px rgba(138, 97, 28, 0.1));
-        }
-
-        .company-logo:hover {
-            transform: scale(1.03);
-            filter: drop-shadow(0 4px 12px rgba(138, 97, 28, 0.15));
-        }
-
-        .company-tagline {
-            font-size: 0.75rem;
-            color: var(--gold-dark);
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            margin-top: 6px;
-        }
-
-        /* Profile Section */
-        .profile {
-            text-align: center;
-            margin-bottom: 24px;
-            animation: fadeInDown 0.6s ease-out 0.1s both;
-        }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .avatar {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid var(--gold-primary);
-            margin: 0 auto 14px;
-            box-shadow: 0 6px 20px rgba(138, 97, 28, 0.25);
-            transition: var(--transition-smooth);
-        }
-
-        .avatar:hover {
-            transform: scale(1.05) translateY(-2px);
-            box-shadow: 0 10px 28px rgba(138, 97, 28, 0.35);
-        }
-
-        .name {
-            font-size: 1.45rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 6px;
-            letter-spacing: -0.5px;
-        }
-
-        .title {
-            font-size: 0.92rem;
-            color: var(--gold-primary);
-            font-weight: 600;
-            margin-bottom: 8px;
-            text-transform: uppercase;
-            letter-spacing: 0.3px;
-        }
-
-        .subtitle {
-            font-size: 0.82rem;
-            color: var(--text-secondary);
-            line-height: 1.4;
-        }
-
-        /* Certification Badges */
-        .certifications {
-            display: flex;
-            justify-content: center;
-            gap: 8px;
-            margin-top: 10px;
-            flex-wrap: wrap;
-        }
-
-        .cert-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-            padding: 4px 10px;
-            background: var(--gold-light);
-            border: 1px solid var(--gold-primary);
-            border-radius: 20px;
-            font-size: 0.7rem;
-            font-weight: 600;
-            color: var(--gold-dark);
-            transition: var(--transition-smooth);
-        }
-
-        .cert-badge:hover {
-            background: var(--gold-primary);
-            color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(138, 97, 28, 0.2);
-        }
-
-        /* Primary Call to Action Buttons */
-        .btn-group {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin-bottom: 22px;
-            animation: fadeInUp 0.6s ease-out 0.2s both;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            width: 100%;
-            padding: 14px 16px;
-            border: none;
-            border-radius: var(--radius);
-            font-size: 0.98rem;
-            font-weight: 600;
-            cursor: pointer;
-            text-decoration: none;
-            transition: var(--transition-smooth);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.2);
-            transition: left 0.3s ease;
             z-index: 0;
         }
 
-        .btn:hover::before {
-            left: 100%;
-        }
-
-        .btn span {
-            position: relative;
-            z-index: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            width: 100%;
-        }
-
-        .btn:active {
-            transform: scale(0.96);
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dark) 100%);
-            color: #ffffff;
-            box-shadow: var(--shadow-md);
-        }
-
-        .btn-primary:hover {
-            box-shadow: var(--shadow-lg);
-            transform: translateY(-2px);
-        }
-
-        .btn-secondary {
-            background: #ffffff;
-            color: var(--gold-dark);
-            border: 2px solid var(--gold-primary);
-        }
-
-        .btn-secondary:hover {
-            background: var(--gold-light);
-            box-shadow: var(--shadow-md);
-            transform: translateY(-2px);
-        }
-
-        /* Direct Contact Grid */
-        .action-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-            margin-bottom: 22px;
-            animation: fadeInUp 0.6s ease-out 0.3s both;
-        }
-
-        .action-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            padding: 14px 12px;
-            background: linear-gradient(135deg, var(--gold-lighter) 0%, var(--gold-light) 100%);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius);
-            color: var(--text-primary);
-            text-decoration: none;
-            transition: var(--transition-smooth);
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .action-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(194, 146, 53, 0.15) 0%, transparent 100%);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
         .action-card:hover::before {
             opacity: 1;
         }
@@ -852,9 +351,12 @@
         }
 
         .action-icon {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: var(--gold-dark);
             transition: var(--transition-smooth);
+            width: 24px;
+            text-align: center;
+            flex-shrink: 0;
             z-index: 1;
         }
 
@@ -866,42 +368,20 @@
         .action-text {
             display: flex;
             flex-direction: column;
-            text-align: center;
             z-index: 1;
+            flex: 1;
         }
 
         .action-label {
             font-size: 0.7rem;
             color: var(--text-secondary);
             font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 0.3px;
         }
 
         .action-val {
-            font-size: 0.85rem;
-            font-weight: 700;
+            font-size: 0.82rem;
+            font-weight: 600;
             color: var(--gold-dark);
-        }
-
-        /* Divider Section */
-        .divider-section {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin: 18px 0;
-            opacity: 0.6;
-        }
-
-        .divider {
-            flex: 1;
-            height: 1px;
-            background: var(--border-color);
-        }
-
-        .divider-icon {
-            font-size: 0.85rem;
-            color: var(--gold-primary);
         }
 
         /* Footer */
@@ -982,12 +462,7 @@
         <div class="profile">
             <img src="https://media.licdn.com/dms/image/v2/D4D03AQEBSEqm-eGK-g/profile-displayphoto-crop_800_800/B4DZ33ZXcYGwAI-/0/1777972125232?e=1789603200&v=beta&t=4aLzRD7m-M34jzpJpRXnYSGHP4-nRhTN6PonRSYMPss" alt="Mina Maged" class="avatar">
             <h1 class="name">Mina Maged</h1>
-            <p class="title">Sales Executive</p>
-            <p class="subtitle">Packaging Solutions Specialist</p>
-            <div class="certifications">
-                <span class="cert-badge"><i class="fa-solid fa-check"></i> ISO 9001</span>
-                <span class="cert-badge"><i class="fa-solid fa-check"></i> ISO 45001</span>
-            </div>
+            <p class="title">Sales Executive | Packaging Solutions</p>
         </div>
 
         <div class="btn-group">
@@ -997,4 +472,20 @@
                 </span>
             </a>
 
-            <a href="https://ahramplastic.com/wp-content/uploads/2025/12/%D9%83%D8%AA%D8%A7%D9%84%D9%88%D8%AC-%D8%B4%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D8%A3%D9%87%D8%B1%D8%A7%D9%85-%D9%84%D8%AA%D8%B5%D9%8A%D9%86%D8%B9-%D8%A7%D9%84%D8%A8%D9%84
+            <a href="https://ahramplastic.com/wp-content/uploads/2025/12/%D9%83%D8%AA%D8%A7%D9%84%D9%88%D8%AC-%D8%B4%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D8%A3%D9%87%D8%B1%D8%A7%D9%85-%D9%84%D8%AA%D8%B5%D9%8A%D9%86%D8%B9-%D8%A7%D9%84%D8%A8%D9%84%D8%A7%D8%B3%D8%AA%D9%8A%D9%83-%D8%B4.%D9%85.%D9%85.pdf" target="_blank" class="btn btn-secondary">
+                <span>
+                    <i class="fa-solid fa-file-pdf"></i> View Product Catalog
+                </span>
+            </a>
+
+            <button class="btn btn-primary" onclick="downloadVCard()">
+                <span>
+                    <i class="fa-solid fa-user-plus"></i> Save Contact
+                </span>
+            </button>
+        </div>
+
+        <div class="action-grid">
+            <a href="https://wa.me/201200379127?text=Hi,%20I'd%20like%20to%20inquire%20about%20Al-Ahram%20packaging%20products." class="action-card" target="_blank">
+                
+
